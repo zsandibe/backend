@@ -1,0 +1,21 @@
+{{ define "content" }}
+<h2>Organizations</h2>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>BIN</th>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Workers</th>
+  </tr>
+  {{ range . }}
+  <tr>
+    <td>{{ .ID }}</td>
+    <td>{{ .BIN }}</td>
+    <td>{{ .Name }}</td>
+    <td>{{ .Address }}</td>
+    <td>{{ .Workers }}</td>
+  </tr>
+  {{ end }}
+</table>
+{{ end }}
